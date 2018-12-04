@@ -1,10 +1,10 @@
 (ns advent01
   (:require [clojure.string :as cs]))
 
-(def freqs (map read-string (cs/split-lines (slurp "frequencies.txt"))))
+(def freqs (map read-string (cs/split-lines (slurp "resources/input01.txt"))))
 
 ;; #1
-(reduce + 0 freqs)
+(println (reduce + 0 freqs))
 
 ;; #2
 (def old-freqs (atom #{}))
